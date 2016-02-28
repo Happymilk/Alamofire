@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaS-IL-pRg">
+                                <rect key="frame" x="535" y="30" width="44" height="30"/>
+                                <state key="normal" title="Check">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Count:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mLH-LG-uyk"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="caQ-Vt-DdZ">
+                                <rect key="frame" x="0.0" y="86" width="600" height="514"/>
+                                <color key="backgroundColor" red="0.92578630709999998" green="1" blue="0.53869023329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.92578630709999998" green="1" blue="0.53869023329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" textLabel="Az1-3a-5r0" detailTextLabel="W29-9H-PrD" rowHeight="48" style="IBUITableViewCellStyleValue1" id="uno-oJ-0Tu">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uno-oJ-0Tu" id="enf-mA-9C7">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="47"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Az1-3a-5r0">
+                                                    <rect key="frame" x="15" y="14" width="32" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W29-9H-PrD">
+                                                    <rect key="frame" x="543" y="14" width="42" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.92578630709999998" green="1" blue="0.53869023329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.92578630709999998" green="1" blue="0.53869023329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Vja-WP-NaA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ym0-TJ-W1h"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input count of rubles" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-b9-mqT">
+                                <rect key="frame" x="40" y="30" width="480" height="30"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92578630709999998" green="1" blue="0.53869023329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="caQ-Vt-DdZ" firstAttribute="top" secondItem="eHT-b9-mqT" secondAttribute="bottom" constant="26" id="H43-UO-Mpd"/>
+                            <constraint firstItem="uaS-IL-pRg" firstAttribute="centerY" secondItem="eHT-b9-mqT" secondAttribute="centerY" id="JBx-0f-xZt"/>
+                            <constraint firstItem="eHT-b9-mqT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="V6u-Gv-ovl"/>
+                            <constraint firstItem="uaS-IL-pRg" firstAttribute="leading" secondItem="eHT-b9-mqT" secondAttribute="trailing" constant="15" id="aSw-xh-Zm6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="caQ-Vt-DdZ" secondAttribute="trailing" constant="-20" id="foj-5X-sK5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="caQ-Vt-DdZ" secondAttribute="bottom" id="h1l-3P-NUM"/>
+                            <constraint firstItem="eHT-b9-mqT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="or8-TM-ejB"/>
+                            <constraint firstItem="caQ-Vt-DdZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="qEF-1Z-WTq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eHT-b9-mqT" secondAttribute="trailing" constant="60" id="rJl-Wz-PEn"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Tpc-sx-Bne" appends="YES" id="6wg-OJ-OMH"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="table" destination="caQ-Vt-DdZ" id="wtS-GU-dgF"/>
+                        <outlet property="valueText" destination="eHT-b9-mqT" id="2TH-8U-XU3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Tpc-sx-Bne">
+                    <connections>
+                        <action selector="hideKey:" destination="BYZ-38-t0r" id="O9H-X2-AaF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="221" y="443"/>
+        </scene>
+    </scenes>
+</document>
