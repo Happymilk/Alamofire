@@ -53,7 +53,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     let xml = SWXMLHash.parse(data!)
                     for i in xml["DailyExRates"]["Currency"] {
                         let rate = i["Rate"].element!.text!
-                        let charCode = i["CharCode"].element!.text!
+                        let charCode = i["Name"].element!.text! + "[" + i["CharCode"].element!.text! + "]"
                         let currency = MyValue(Currency: charCode, Value: rate)
                         self.values.append(currency)
                     }

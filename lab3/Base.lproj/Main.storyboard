@@ -27,6 +27,12 @@
                                     <action selector="Count:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mLH-LG-uyk"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input count of rubles" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-b9-mqT">
+                                <rect key="frame" x="40" y="30" width="480" height="30"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="caQ-Vt-DdZ">
                                 <rect key="frame" x="0.0" y="86" width="600" height="514"/>
                                 <color key="backgroundColor" red="0.92578630709999998" green="1" blue="0.53869023329999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -66,12 +72,6 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ym0-TJ-W1h"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input count of rubles" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-b9-mqT">
-                                <rect key="frame" x="40" y="30" width="480" height="30"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.92578630709999998" green="1" blue="0.53869023329999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
